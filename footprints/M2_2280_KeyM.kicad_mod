@@ -1,0 +1,11 @@
+(footprint "M2_2280_KeyM" (version 202402)
+  (generator "KiCad")
+  (attr through_hole)
+  (descr "M.2 2280 Key M socket placeholder — verify pinout with connector manufacturer")
+  (fp_text reference REF** (at 0 -6) (layer F.SilkS))
+  (fp_text value M2_2280_KeyM (at 0 6) (layer F.Fab))
+  ; Mounting holes Typical
+  (pad 1 thru_hole circle (at -20 0) (size 2.5 2.5) (drill 1.8) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at 20 0) (size 2.5 2.5) (drill 1.8) (layers *.Cu *.Mask))
+  ; Edge connector contact pads placeholders (will be mapped by schematic->pcb step)
+)

@@ -1,5 +1,14 @@
-(kicad_mod Quectel_RM502Q_Module (layer F.Cu) (tedit 00000000)
-  (descr "Placeholder for Quectel RM502Q M.2 module footprint (mechanical + antenna keepouts).
-  - Confirm exact mechanical drawing from Quectel datasheet; attach STEP if available.
-  - Keep antenna areas free (0.5 mm or as vendor recommends).")
+(footprint "Quectel_RM502Q_Module" (version 202402)
+  (generator "KiCad")
+  (attr through_hole)
+  (descr "M.2 style mechanical module outline placeholder for Quectel RM502Q; use STP to refine 3D")
+  (fp_text reference REF** (at -10 -4) (layer F.SilkS))
+  (fp_text value Quectel_RM502Q_Module (at 0 10) (layer F.Fab))
+  ; Mechanical mounting pads / keepouts expressed as thru_hole or np_thru_hole
+  (pad np_thru_hole circle (at -15 0) (size 1.8 1.8) (drill 1.8) (layers *.Cu *.Mask))
+  (pad np_thru_hole circle (at 15 0) (size 1.8 1.8) (drill 1.8) (layers *.Cu *.Mask))
+  ; module contact pads (placeholders)
+  (pad 1 smd rect (at -10 5) (size 1.0 1.5) (layers F.Cu F.Mask F.Paste))
+  (pad 2 smd rect (at -8 5) (size 1.0 1.5) (layers F.Cu F.Mask F.Paste))
+  ; ... add pads per mechanical pinout when available
 )

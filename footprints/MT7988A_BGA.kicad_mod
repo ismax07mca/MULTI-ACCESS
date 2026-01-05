@@ -1,8 +1,10 @@
-(kicad_mod MT7988A_BGA (layer F.Cu) (tedit 00000000)
-  (descr "Placeholder: MT7988A FCCSP/BGA approx 19x19 mm, pitch 0.8 mm.
-  - Generate exact padmap from MT7988A datasheet.
-  - Fanout strategy: microvias 0.20 mm to reach inner layers; through via breakout 0.45 mm where needed.
-  - Thermal pad: central exposed pad with thermal via array.
-  - Use generate_footprints.py to produce final pads from ballmap table.")
-  ; Pads to be generated programmatically.
+(footprint "MT7988A_BGA" (version 202402)
+  (generator "KiCad")
+  (attr smd)
+  (descr "Placeholder BGA footprint for MT7988A — 31x31 @ 0.8 mm pitch, ball dia ~0.45 mm (verify with datasheet)")
+  (fp_text reference REF** (at 0 -12) (layer F.SilkS))
+  (fp_text value MT7988A_BGA (at 0 12) (layer F.Fab))
+  ; Pads grid 31x31 (placeholder) — adjust rows/cols, pad shapes, solder mask as needed
+  ; Center pad (thermal) placeholder
+  ; NOTE: This is an initial placeholder. Validate with official ballmap in MT7988A datasheet.
 )

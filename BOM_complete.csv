@@ -1,0 +1,8 @@
+ref,qty,value,footprint,manufacturer,manufacturer_pn,comment
+U1,1,MT7988A,MT7988A_BGA,MediaTek,MT7988A,"SoC - verify power rails and package"
+U2,1,RM502Q,Quectel_RM502Q_Module,Quectel,RM502Q,"5G module, M.2"
+J1,1,M.2_2280_KeyM,M2_2280_KeyM,Generic,CONN_M2_2280,"NVMe socket"
+J2,1,SFPplus_Cage,SFPplus_Cage,RTS,RTS29,"SFP+ cage - mechanical from PDF"
+J3,1,RJ45_MagJack,RJ45_MagJack,Wurth,7498111001A,"RJ45 MagJack with transformer"
+SIM1,1,NanoSIM,SIM_Nano,Generic,SIM_HOLDER,"Nano‑SIM holder"
+CN1,1,USB-C_16PF,USB_C_16PF,Generic,USB-C-16,"USB-C receptacle"

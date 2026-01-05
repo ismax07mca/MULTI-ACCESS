@@ -1,10 +1,20 @@
-DFM / Manufacturing notes (initial)
+DFM / Backdrill / Microvia policy (initial notes)
 
-- Stackup: RO4350B 8 layers (see stackup.md) — confirm with manufacturer.
-- Copper: 1 oz outer / 1 oz inner.
-- Microvias: laser via 0.20 mm capability required for BGA fanout.
-- Through vias: typical drill 0.35 - 0.45 mm.
-- Backdrill: required for DDR & PCIe; specify backdrill depths per layer stackup (example: backdrill to remove stub down to L3 for DDR).
-- Impedance: target ±5% (50 Ω se, 90 Ω diff); include impedance test coupons.
-- Surface finish: ENIG recommended for RF and fine-pitch BGA.
-- Provide manufacturer with test coupon XY for impedance verification.
+- Microvia (fanout) policy:
+  * Recommended microvia drill: 0.20 mm (if vendor supports microvia), aspect ratio per fab.
+  * If microvias not available, use 0.35 mm via for first breakout with short traces to inner layer.
+
+- Backdrill:
+  * DDR and PCIe via backdrill recommended for vias that traverse signal layers and impact SI.
+  * Provide backdrill list: coordinates + drill depth in final manufacturing notes.
+
+- Via annular ring:
+  * Min annular ring: 0.15 mm (validate with your fabricator).
+
+- Soldermask:
+  * For BGA breakout, tent mask on thermal via if needed; coordinate with assembler.
+
+- Test coupons:
+  * Provide impedance coupons for 90Ω and 100Ω differential pairs.
+
+Notes: refine after DRC/3D checks and SI review.
